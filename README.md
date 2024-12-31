@@ -1,4 +1,5 @@
 🅽🅼🅰🅿 🆂🅲🅰🅽 🅰🆄🆃🅾🅼🅰🆃🅸🅾🅽 🆂🅲🆁🅸🅿🆃
+
 This Python script provides a simple and user-friendly interface to perform network scans using Nmap. It allows users to choose between SYN scan, TCP scan, or a full scan, targeting specific ports or all ports on a specified IP address.
 
 Features
@@ -6,6 +7,7 @@ Features
 User Input for Target IP: Prompts the user to input the IP address of the target machine.
 
 𝕊𝕔𝕒𝕟 𝕋𝕪𝕡𝕖 𝕊𝕖𝕝𝕖𝕔𝕥𝕚𝕠𝕟:
+
 Press 1 for a SYN scan.
 
 Press 2 for a TCP scan.
