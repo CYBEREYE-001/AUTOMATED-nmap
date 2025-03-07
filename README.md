@@ -1,47 +1,71 @@
-🅽🅼🅰🅿 🆂🅲🅰🅽 🅰🆄🆃🅾🅼🅰🆃🅸🅾🅽 🆂🅲🆁🅸🅿🆃
+# Network Port Scanner
 
-This Python script provides a simple and user-friendly interface to perform network scans using Nmap. It allows users to choose between SYN scan, TCP scan, or a full scan, targeting specific ports or all ports on a specified IP address.
+This Python script is a simple yet powerful network port scanner that utilizes Nmap to perform various types of scans on a specified target IP address. It allows users to specify individual ports, ranges of ports, or scan all ports, and offers options for service version detection and OS detection.
 
-F⃣   e⃣   a⃣   t⃣   u⃣   r⃣   e⃣   s⃣ :
+## Features
 
-User Input for Target IP: Prompts the user to input the IP address of the target machine.
+- **IP Address Validation**: Ensures that the provided IP address is in a valid format.
+- **Port Input Handling**: Accepts single ports, multiple ports, or ranges of ports for scanning.
+- **Multiple Scan Types**: Offers various scanning techniques, including:
+  - SYN Scan (`-sS`)
+  - TCP Connect Scan (`-sT`)
+  - Full Scan (defaulting to SYN Scan)
+  - FIN Scan (`-sF`)
+  - Xmas Scan (`-sX`)
+  - NULL Scan (`-sN`)
+  - UDP Scan (`-sU`)
+- **Service Version Detection**: Optionally includes service version detection with the `-sV` flag.
+- **OS Detection**: Optionally includes OS detection with the `-O` flag.
+- **Command Execution**: Executes the Nmap command directly from the script and displays the command being run.
 
-s⃣   c⃣   a⃣   n⃣    t⃣   y⃣   p⃣   e⃣    s⃣   e⃣   l⃣   e⃣   c⃣   t⃣   i⃣   o⃣   n⃣ :
+## Requirements
 
-Press 1 for a SYN scan.
+- Python 3.x
+- Nmap installed on your system
 
-Press 2 for a TCP scan.
+## Usage
 
-Press 3 for a full scan.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/CYBEREYE-001/nmap_scan.git
+   cd nmap_scan
+   ```
 
+2. Run the script:
+   ```bash
+   python3 nmap_scan.py
+   ```
 
-ℂ𝕦𝕤𝕥𝕠𝕞 ℙ𝕠𝕣𝕥 𝕊𝕔𝕒𝕟𝕟𝕚𝕟𝕘: Allows the user to specify a particular port to scan (for SYN and TCP scans).
+3. Follow the prompts to enter the target IP address, select the scan type, and specify the ports to scan.
 
-𝔻𝕖𝕥𝕒𝕚𝕝𝕖𝕕 𝕆𝕦𝕥𝕡𝕦𝕥: Includes service detection (-sV) and operating system detection (-O) in all scan types.
+## Example
 
+```plaintext
+ENTER THE VICTIM IP ADDRESS: 192.168.1.1
+PRESS:
+1 = SYN SCAN
+2 = TCP CONNECT SCAN
+3 = FULL SCAN
+4 = FIN SCAN
+5 = Xmas SCAN
+6 = NULL SCAN
+7 = UDP SCAN
+ENTER YOUR CHOICE: 1
+SPECIFY THE PORT(S) (e.g., 22, 80, 100-200) or press Enter to scan all ports: 22, 80
+Include service version detection? (y/n): y
+Include OS detection? (y/n): n
+Executing command: nmap 192.168.1.1 -sS -sV -p 22 80
+```
 
-ℙ𝕣𝕖𝕣𝕖𝕢𝕦𝕚𝕤𝕚𝕥𝕖𝕤 -
+## Notes
 
-#Python 3: Make sure Python 3 is installed on your system.
+- Ensure you have the necessary permissions to scan the target IP address.
+- Use responsibly and only scan networks you own or have explicit permission to test.
 
-#Nmap: Install Nmap on your machine to execute the scans.
+## License
 
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-U⃣   s⃣   a⃣   g⃣   e⃣ :
+---
 
-1. Run the script:
-
-python3 nmap_scan.py
-
-
-2. Follow the prompts:
-
-Enter the target IP address.
-
-Select the scan type by entering 1, 2, or 3.
-
-Specify the target port (if applicable).
-
-Note
-
-This script requires administrative privileges to execute certain scans. Make sure you run it with the necessary permissions.
+Feel free to modify any part of the description to better fit your style or the specifics of your project!
