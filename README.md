@@ -27,8 +27,8 @@ This Python script is a simple yet powerful network port scanner that utilizes N
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/CYBEREYE-001/nmap_scan.git
-   cd nmap_scan
+   git clone https://github.com/CYBEREYE-001/AUTOMATED-nmap.git
+   cd AUTOMATED-nmap
    ```
 
 2. Run the script:
