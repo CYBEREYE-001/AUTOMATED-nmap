@@ -22,6 +22,11 @@ This Python script is a simple yet powerful network port scanner that utilizes N
 
 - Python 3.x
 - Nmap installed on your system
+- figlet installed on your system
+  
+  ```bash
+  apt install figlet
+  ```
 
 ## Usage
 
