@@ -21,13 +21,22 @@ This Python script is a simple yet powerful network port scanner that utilizes N
 ## Requirements
 
 - Python 3.x
+
+  ```bash
+  apt install python3-full
+  ```
 - Nmap installed on your system
+
+  ```bash
+  apt install nmap
+  ```
 - figlet installed on your system
   
   ```bash
   apt install figlet
   ```
-
+- If you are using ARCH linux then replace the "apt install" and use "pacman -S"
+  
 ## Usage
 
 1. Clone the repository:
