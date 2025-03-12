@@ -1,6 +1,9 @@
 import subprocess
 import re
 
+subprocess.run(["figlet", "AUTO-NMAP"])
+print(">>--S-T-A-R-T-E-D--<")
+
 def is_valid_ip(ip):
     """Validate the IP address format."""
     pattern = re.compile(r"^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$")
@@ -32,20 +35,20 @@ def get_ports():
 
 def main():
     # Get the target IP address from the user
-    ip = input("ENTER THE VICTIM IP ADDRESS: ")
+    ip = input(">> ENTER THE VICTIM IP ADDRESS: ")
     if not is_valid_ip(ip):
         print("Invalid IP address format.")
         return
 
     # Display scan options and get the user's choice
     print("PRESS:")
-    print("1 = SYN SCAN")
-    print("2 = TCP CONNECT SCAN")
-    print("3 = FULL SCAN")
-    print("4 = FIN SCAN")
-    print("5 = Xmas SCAN")
-    print("6 = NULL SCAN")
-    print("7 = UDP SCAN")
+    print("> 1 = SYN SCAN")
+    print("> 2 = TCP CONNECT SCAN")
+    print("> 3 = FULL SCAN")
+    print("> 4 = FIN SCAN")
+    print("> 5 = Xmas SCAN")
+    print("> 6 = NULL SCAN")
+    print("> 7 = UDP SCAN")
     scan = input("ENTER YOUR CHOICE: ")
 
     # Get the ports to scan
