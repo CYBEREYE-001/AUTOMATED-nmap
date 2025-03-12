@@ -2,7 +2,7 @@ import subprocess
 import re
 
 subprocess.run(["figlet", "AUTO-NMAP"])
-print(">>--S-T-A-R-T-E-D--<")
+print(">>--S-T-A-R-T-E-D--<<")
 
 def is_valid_ip(ip):
     """Validate the IP address format."""
