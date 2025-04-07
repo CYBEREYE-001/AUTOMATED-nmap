@@ -43,13 +43,14 @@ def main():
 
     # Display scan options and get the user's choice
     print("PRESS:")
-    print("> 1 = SYN SCAN")
-    print("> 2 = TCP CONNECT SCAN")
-    print("> 3 = FULL SCAN")
-    print("> 4 = FIN SCAN")
-    print("> 5 = Xmas SCAN")
-    print("> 6 = NULL SCAN")
-    print("> 7 = UDP SCAN")
+    print("-> 1 = SYN SCAN")
+    print("-> 2 = TCP CONNECT SCAN")
+    print("-> 3 = FULL SCAN")
+    print("-> 4 = FIN SCAN")
+    print("-> 5 = Xmas SCAN")
+    print("-> 6 = NULL SCAN")
+    print("-> 7 = UDP SCAN")
+    print("-> 8 = NO PING SCAN")
     scan = input("ENTER YOUR CHOICE: ")
 
     # Get the ports to scan
@@ -79,6 +80,8 @@ def main():
         command += ["-sN"] + options
     elif scan == '7':  # UDP SCAN
         command += ["-sU"] + options
+    elif scan == '8':  #No Ping
+        command += ["-Pn"]
     else:
         print("Invalid choice. Please select a valid scan type.")
         return
