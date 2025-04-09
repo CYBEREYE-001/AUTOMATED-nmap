@@ -64,6 +64,7 @@ PRESS:
 5 = Xmas SCAN
 6 = NULL SCAN
 7 = UDP SCAN
+8 = NO PING SCAN
 ENTER YOUR CHOICE: 1
 SPECIFY THE PORT(S) (e.g., 22, 80, 100-200) or press Enter to scan all ports: 22, 80
 Include service version detection? (y/n): y
